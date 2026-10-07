@@ -1,0 +1,21 @@
+{
+    "name": "ph20sr/api-keys-php",
+    "description": "Chaves de API seguras para PHP: só o hash é armazenado, checksum contra erro de digitação, escopos com curinga, expiração, revogação e rotação sem downtime.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["api-keys", "api-key", "authentication", "security", "tokens", "scopes", "php", "pdo"],
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": { "Ph20sr\\ApiKeys\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Ph20sr\\ApiKeys\\Tests\\": "tests/" }
+    }
+}
